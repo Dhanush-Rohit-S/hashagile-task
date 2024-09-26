@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Upload</title>
+  </head>
+  <body>
+    <h1>Upload Resume</h1>
+    <form
+      action="{{ url_for('upload_resume') }}"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <label for="resume">Upload Resume (PDF or DOCX):</label>
+      <input type="file" name="resume" id="resume" required />
+      <button type="submit">Upload</button>
+    </form>
+  </body>
+</html>
